@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MNIST Digit Drawer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h2>Draw a Digit (MNIST-like)</h2>
+    <canvas id="draw-canvas" width="280" height="280"></canvas>
+    <div id="controls">
+      <button onclick="clearCanvas()">Clear</button>
+      <button onclick="export28()">Export 28x28</button>
+    </div>
+    <textarea id="output" readonly></textarea>
+    <div id="copied">Copied to clipboard!</div>
+  </body>
+</html>
