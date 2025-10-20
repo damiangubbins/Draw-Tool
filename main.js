@@ -13,7 +13,7 @@ function draw(e) {
   if (!drawing) return;
   ctx.fillStyle = "white";
   ctx.beginPath();
-  ctx.arc(e.offsetX, e.offsetY, 12, 0, Math.PI * 2);
+  ctx.arc(e.offsetX, e.offsetY, 10, 0, Math.PI * 2);
   ctx.fill();
 }
 
@@ -30,7 +30,6 @@ async function export28() {
   smallCanvas.height = 28;
   const smallCtx = smallCanvas.getContext("2d");
 
-  smallCtx.filter = "blur(0.5px)";
   smallCtx.drawImage(canvas, 0, 0, 28, 28);
 
   const imgData = smallCtx.getImageData(0, 0, 28, 28).data;
