@@ -7,14 +7,14 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <h2>Dibuja un digito (tipo MNIST)</h2>
+    <h2>Dibuja un dígito (tipo MNIST)</h2>
     <canvas id="draw-canvas" width="280" height="280" style="touch-action: none"></canvas>
     <div id="controls">
-      <button onclick="clearCanvas()">Clear</button>
-      <button onclick="export28()">Exportar como CSV</button>
+      <button onclick="clearCanvas()">Limpiar</button>
+      <button onclick="export28()">Exportar como CSV (28x28)</button>
     </div>
 
-    <p>Lo que vera la red neuronal (28x28):</p>
+    <p>Lo que verá la red neuronal (28x28):</p>
     <canvas
       id="preview-canvas"
       width="28"
