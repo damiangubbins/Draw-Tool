@@ -7,13 +7,22 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <h2>Draw a Digit (MNIST-like)</h2>
-    <canvas id="draw-canvas" width="280" height="280"></canvas>
+    <h2>Dibuja un digito (tipo MNIST)</h2>
+    <canvas id="draw-canvas" width="280" height="280" style="touch-action: none"></canvas>
     <div id="controls">
       <button onclick="clearCanvas()">Clear</button>
-      <button onclick="export28()">Export 28x28</button>
+      <button onclick="export28()">Exportar como CSV</button>
     </div>
+
+    <p>Lo que vera la red neuronal (28x28):</p>
+    <canvas
+      id="preview-canvas"
+      width="28"
+      height="28"
+      style="width: 140px; height: 140px; image-rendering: pixelated; border: 1px solid #888"
+    ></canvas>
+
     <textarea id="output" readonly></textarea>
-    <div id="copied">Copied to clipboard!</div>
+    <div id="copied">Copiado al portapapeles!</div>
   </body>
 </html>
